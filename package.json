@@ -1,7 +1,7 @@
 {
   "name": "sails-boat",
   "version": "0.0.1",
-  "description": "A boat for sails",
+  "description": "A boat for sails, use async/await/yield in sails.",
   "main": "index.js",
   "scripts": {
     "test": "mocha",

@@ -1,5 +1,5 @@
 # sails-boat
-> A boat for sails
+> A boat for sails, use async/await/yield in sails.
 
 [![Build Status](https://img.shields.io/travis/magicdawn/sails-boat.svg?style=flat-square)](https://travis-ci.org/magicdawn/sails-boat)
 [![Coverage Status](https://img.shields.io/coveralls/magicdawn/sails-boat.svg?style=flat-square)](https://coveralls.io/github/magicdawn/sails-boat?branch=master)
