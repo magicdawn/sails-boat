@@ -7,14 +7,47 @@
 [![npm downloads](https://img.shields.io/npm/dm/sails-boat.svg?style=flat-square)](https://www.npmjs.com/package/sails-boat)
 [![npm license](https://img.shields.io/npm/l/sails-boat.svg?style=flat-square)](http://magicdawn.mit-license.org)
 
+## Features
+
+- [x] `async/await` / `generator-function` support in `boat.action`
+- [x] `boat.defaultErrorHandler` as error handle
+
 ## Install
 ```
 npm i sails-boat --save
 ```
 
 ## API
+```js
+const boat = require('sails-boat');
 ```
-const sailsBoat = require('sails-boat');
+
+
+### `boat.action`
+
+`boat.action(fn, errorHandler)`
+
+- fn: async function / generator-function / normal function, with `(req, res)` para
+- errorHandler: defaults to `boat.defaultErrorHandler`, with `(req, res, err)` para
+
+```js
+const boat = require('sails-boat');
+const sleep = require('promise.delay');
+
+// api/controller/HelloController.js
+module.exports = {
+  world: boat.action(function*(req, res){
+    yield sleep(100); // sleep 100ms
+    var results = yield SomeModel.find();
+    res.send(results);
+  }),
+
+  foo: boat.action(async function(req, res){
+    await sleep(100);
+    var results = await SomeModel.find();
+    res.send(results);
+  })
+}
 ```
 
 ## Changelog
