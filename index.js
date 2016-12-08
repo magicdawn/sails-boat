@@ -1,5 +1,5 @@
 'use strict'
 
-exports.pifyModels = require('./lib/pifyModels')
+exports.patchModels = require('./lib/patchModels')
 
 exports.patchBluebird = require('./lib/patchBluebird.js')
