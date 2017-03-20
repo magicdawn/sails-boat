@@ -1,7 +1,7 @@
 {
   "name": "sails-boat",
-  "version": "0.0.1",
-  "description": "A boat for sails, use async/await/yield in sails.",
+  "version": "0.1.0",
+  "description": "sails helper",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -14,10 +14,7 @@
   "keywords": [
     "sails",
     "boat",
-    "generator-function",
-    "async-function",
-    "yield",
-    "await"
+    "helper"
   ],
   "author": "magicdawn",
   "license": "MIT",
@@ -38,9 +35,11 @@
     "should": "^8.3.1"
   },
   "files": [
-    "index.js",
     "package.json",
     "README.md",
-    "LICENSE"
+    "CHANGELOG.md",
+    "LICENSE",
+    "index.js",
+    "lib"
   ]
 }
