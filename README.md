@@ -1,4 +1,6 @@
 # sails-boat
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/magicdawn/sails-boat.svg)](https://greenkeeper.io/)
 > Sails.js helper library
 
 <!--
