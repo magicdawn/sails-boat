@@ -28,11 +28,11 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.9",
-    "eslint": "^2.10.1",
+    "eslint": "^3.19.0",
     "istanbul": "^0.4.3",
-    "mocha": "^2.4.5",
+    "mocha": "^3.2.0",
     "sails": "^0.12.3",
-    "should": "^8.3.1"
+    "should": "^11.2.1"
   },
   "files": [
     "package.json",
